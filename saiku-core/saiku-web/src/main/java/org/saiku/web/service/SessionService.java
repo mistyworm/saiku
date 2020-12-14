@@ -94,29 +94,29 @@ public class SessionService implements ISessionService {
 	 * @see org.saiku.web.service.ISessionService#login(javax.servlet.http.HttpServletRequest, java.lang.String, java.lang.String)
 	 */
 	public Map<String, Object> login(HttpServletRequest req, String username, String password ) throws LicenseException {
-		Object sl = null;
-		String notice = null;
+//		Object sl = null;
+//		String notice = null;
 		HttpSession session = ((HttpServletRequest)req).getSession(true);
 		session.getId();
 		sessionRepo.setSession(session);
-		try {
-			sl = l.getLicense();
-		} catch (Exception e) {
-			log.debug("Could not process license", e);
-			throw new LicenseException("Error fetching license. Get a free license from http://licensing.meteorite.bi. You can upload it at /upload.html");
-		}
+//		try {
+//			sl = l.getLicense();
+//		} catch (Exception e) {
+//			log.debug("Could not process license", e);
+//			throw new LicenseException("Error fetching license. Get a free license from http://licensing.meteorite.bi. You can upload it at /upload.html");
+//		}
+//
+//		if (sl != null) {
+//
+//			try {
+//				l.validateLicense();
+//			} catch (RepositoryException | IOException | ClassNotFoundException e) {
+//				log.debug("Repository Exception, couldn't get license", e);
+//				throw new LicenseException("Error fetching license. Please check your logs.");
+//			}
 
-		if (sl != null) {
-
-			try {
-				l.validateLicense();
-			} catch (RepositoryException | IOException | ClassNotFoundException e) {
-				log.debug("Repository Exception, couldn't get license", e);
-				throw new LicenseException("Error fetching license. Please check your logs.");
-			}
-
-			try {
-				if (l.getLicense() instanceof SaikuLicense2) {
+//			try {
+//				if (l.getLicense() instanceof SaikuLicense2) {
 
                     if (authenticationManager != null) {
                         authenticate(req, username, password);
@@ -135,13 +135,13 @@ public class SessionService implements ISessionService {
                         }
                     }
                     return new HashMap<>();
-                }
-			} catch (IOException | ClassNotFoundException | RepositoryException e) {
-				log.debug("Repository Exception, couldn't get license", e);
-				throw new LicenseException("Error fetching license. Please check your logs.");
-			}
-		}
-		return null;
+//                }
+//			} catch (IOException | ClassNotFoundException | RepositoryException e) {
+//				log.debug("Repository Exception, couldn't get license", e);
+//				throw new LicenseException("Error fetching license. Please check your logs.");
+//			}
+//		}
+//		return null;
 	}
 
 	private void createSession(Authentication auth, String username, String password) {

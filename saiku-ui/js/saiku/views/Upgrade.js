@@ -40,7 +40,7 @@ var Upgrade = Backbone.View.extend({
 
 	render: function() {
 
-		var self = this;
+/*		var self = this;
 		var license = new License();
 
 		if(Settings.BIPLUGIN5){
@@ -96,7 +96,7 @@ var Upgrade = Backbone.View.extend({
 				}
 		}
 
-
+*/
 
 
 

@@ -319,15 +319,31 @@
         </plugins>
     </build>
     <repositories>
+<!--        <repository>-->
+<!--            <id>Analytical Labs Repo</id>-->
+<!--            <name>Analytical Labs Repo-releases</name>-->
+<!--            <url>http://repo.meteorite.bi/repository/alabs-release-local/</url>-->
+<!--        </repository>-->
+<!--        <repository>-->
+<!--            <id>Analytical Labs snapshots</id>-->
+<!--            <name>Analytical Labs Repo-releases</name>-->
+<!--            <url>http://repo.meteorite.bi/repository/alabs-snapshot-local</url>-->
+<!--        </repository>-->
         <repository>
-            <id>Analytical Labs Repo</id>
-            <name>Analytical Labs Repo-releases</name>
-            <url>http://repo.meteorite.bi/repository/alabs-release-local/</url>
+            <id>gitlab-maven</id>
+            <url>https://gitlab.com/api/v4/projects/14840263/packages/maven</url>
         </repository>
         <repository>
-            <id>Analytical Labs snapshots</id>
-            <name>Analytical Labs Repo-releases</name>
-            <url>http://repo.meteorite.bi/repository/alabs-snapshot-local</url>
+            <id>saiku-group</id>
+            <url>https://nexus.nuiton.org/nexus/content/repositories/saiku-group/</url>
+        </repository>
+        <repository>
+            <id>pentaho-pentaho-third-party</id>
+            <url>http://nexus.pentaho.org/content/repositories/proxy-pentaho-public-release-group/</url>
+        </repository>
+        <repository>
+            <id>pentaho-public-third-party</id>
+            <url>http://nexus.pentaho.org/content/repositories/proxy-public-3rd-party-release/</url>
         </repository>
         <repository>
             <id>pentaho-third-party</id>

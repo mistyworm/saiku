@@ -294,20 +294,28 @@
 		</plugins>
 	</build>
      <repositories>
-        <repository>
-            <id>jsdoctk1</id>
-            <url>http://jsdoctk-plugin.googlecode.com/svn/repo</url>
-        </repository>
+<!--        <repository>-->
+<!--            <id>jsdoctk1</id>-->
+<!--            <url>http://jsdoctk-plugin.googlecode.com/svn/repo</url>-->
+<!--        </repository>-->
+		 <repository>
+			 <id>saiku-group</id>
+			 <url>https://nexus.nuiton.org/nexus/content/repositories/saiku-group/</url>
+		 </repository>
     </repositories>
     <pluginRepositories>
-        <pluginRepository>
-            <id>jsdoctk2</id>
-            <url>http://jsdoctk-plugin.googlecode.com/svn/repo</url>
-        </pluginRepository>
-        <pluginRepository>
-            <name>oss.sonatype.org</name>
-            <id>oss.sonatype.org</id>
-            <url>http://oss.sonatype.org/content/groups/public</url>
-        </pluginRepository>
+		<pluginRepository>
+			<id>saiku-group2</id>
+			<url>https://nexus.nuiton.org/nexus/content/repositories/saiku-group/</url>
+		</pluginRepository>
+<!--        <pluginRepository>-->
+<!--            <id>jsdoctk2</id>-->
+<!--            <url>http://jsdoctk-plugin.googlecode.com/svn/repo</url>-->
+<!--        </pluginRepository>-->
+<!--        <pluginRepository>-->
+<!--            <name>oss.sonatype.org</name>-->
+<!--            <id>oss.sonatype.org</id>-->
+<!--            <url>http://oss.sonatype.org/content/groups/public</url>-->
+<!--        </pluginRepository>-->
     </pluginRepositories>
 </project>
