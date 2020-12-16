@@ -733,6 +733,7 @@
             <dependency>
                 <groupId>pentaho</groupId>
                 <artifactId>mondrian</artifactId>
+<!--                <version>9.1.0.0-295</version>-->
                 <version>4.3.0.1.1-SPARK</version>
             </dependency>
             <!-- Spring modules -->

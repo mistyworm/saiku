@@ -788,7 +788,6 @@
         <dependency>
             <groupId>pentaho</groupId>
             <artifactId>mondrian</artifactId>
-            <version>3.11.0.0-353</version>
         </dependency>
     </dependencies>
 </project>
